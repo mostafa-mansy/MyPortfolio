@@ -1,0 +1,41 @@
+.contianer-contact{
+    @apply w-full h-screen bg-gradient-to-b
+             from-black to-gray-800 p-4 text-white;
+
+    footer{
+        @apply flex flex-col p-4 justify-center 
+                max-w-screen-lg mx-auto h-full;
+
+            section{
+                h1{
+                    @apply text-4xl font-bold inline border-b-4 border-gray-500;
+                } 
+            }
+
+            div{
+                @apply flex justify-center items-center;
+
+                form{
+                    @apply flex flex-col w-full md:w-1/2;
+
+                    input,textarea{
+                        @apply my-2 p-2 bg-transparent border-2 rounded-md 
+                                text-white focus:outline-none;  
+                    }
+                    button{
+                        @apply text-white bg-gradient-to-b
+                                 from-cyan-500 to-blue-500 px-6 py-3 
+                                    my-8 mx-auto flex items-center 
+                                    rounded-md hover:scale-110 duration-300;
+                    }
+                }
+
+            }
+
+
+    }
+
+
+
+
+}
